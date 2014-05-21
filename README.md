@@ -3,13 +3,19 @@ photograph-template
 
 photograp tempate with beautiful slider.
 
-Changelog
-=Version: 1
+<h1>Changelog</h1>
 
-==Simple Slider with images
-
-==Settings.json file include
-
-==Responsize
-
-==List Buttons
+<b>Version: 1</b>
+<ul>
+<li>
+-Simple Slider with images
+</li>
+<li>
+-Settings.json file include
+</li>
+<li>
+-Responsize</li>
+<li>
+-List Buttons
+</li>
+</ul>
