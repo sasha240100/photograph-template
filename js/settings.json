@@ -1,0 +1,26 @@
+{
+	"images" : {
+		"number":5,
+		"assets": [
+			"img/assets/1.jpg",
+			"img/assets/2.jpg",
+			"img/assets/3.jpg",
+			"img/assets/2.jpg",
+			"img/assets/3.jpg"
+		],
+		"sizes": [
+			{"width": 2048,"height": 1367},
+			{"width": 1500,"height": 863},
+			{"width": 2048,"height": 1328},
+			{"width": 1500,"height": 863},
+			{"width": 2048,"height": 1328}
+		]
+	},
+	
+	"usersettings" : {
+		"overflow":"hidden",
+		"deafultImageNum": 0,
+		"bodyFading": true,
+		"sptamp": "img/sp-tampl.png"
+	}
+}

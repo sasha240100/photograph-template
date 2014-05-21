@@ -1,0 +1,85 @@
+/* CSS Document
+#Author: @alexanderBuzin
+#Version: 0.1 */
+
+html, body {
+ background: #333;	
+ height:100%;
+ margin: 0;
+ padding:0;
+}
+
+#vertical-line {
+	position:absolute;
+	background: #696357;
+	width: 150px;
+	height: 100%;
+	right: 52%;
+}
+
+.vl_button {
+	text-align: center;
+	position:absolute;
+	width: inherit;
+	height: 50px;
+	background: -webkit-radial-gradient(transparent, rgba(255,255,255,0.15)), -webkit-linear-gradient(rgba(255,255,255,0.15), transparent);
+	/*background-position: 0 5px;*/
+	box-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+
+.vl_button span {
+	opacity: .5;
+}
+
+#vl_bottom.vl_button {
+	bottom:0;
+	background: -webkit-radial-gradient(transparent, rgba(255,255,255,0.15)), -webkit-linear-gradient(transparent, rgba(255,255,255,0.15));
+}
+
+ul#vl_ul {
+	padding:0;
+	margin:0;
+	padding-top: 100px;
+}
+
+.img_shortcut {
+	position:relative;
+	width: 150px;
+	height: 100px;
+	list-style:none;
+}
+
+.img_shortcut div.vu_inner {
+	margin: 10px;
+	width:130px;
+	height:80px;
+	border-radius:5px;
+	box-shadow: 0 0 10px black;
+}
+
+div#preview {
+	position:absolute;
+	width: 52%;
+	height: 100%;
+	right:0;
+}
+
+div#more {
+	position:absolute;
+	width: 50px;
+	height: 100%;
+	right:0;
+}
+
+div#more:hover {
+	background: rgba(255,255,255,0.1);
+}
+
+div#sp-tamp {
+	position:absolute;
+	left:0;
+	top:0;
+	width:200px;
+	height:200px;
+	background-size:100%;
+}
