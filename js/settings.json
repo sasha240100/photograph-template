@@ -5,15 +5,15 @@
 			"img/assets/1.jpg",
 			"img/assets/2.jpg",
 			"img/assets/3.jpg",
-			"img/assets/2.jpg",
-			"img/assets/3.jpg"
+			"img/assets/4.jpg",
+			"img/assets/5.jpg"
 		],
 		"sizes": [
 			{"width": 2048,"height": 1367},
 			{"width": 1500,"height": 863},
 			{"width": 2048,"height": 1328},
-			{"width": 1500,"height": 863},
-			{"width": 2048,"height": 1328}
+			{"width": 1061,"height": 700},
+			{"width": 1600,"height": 1010}
 		]
 	},
 	
