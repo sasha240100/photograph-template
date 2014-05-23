@@ -42,3 +42,5 @@ Rebuild(fixed) script.js code
 3 simple text displaying effects 
 </li>
 </ul>
+<br>
+<h4>#Author: @alexanderBuzin</h4>
