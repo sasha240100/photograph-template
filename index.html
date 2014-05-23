@@ -8,13 +8,13 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="http://code.jquery.com/jquery-2.1.1.min.js">
-    </script>
+    </script><script src="js/jquery-ui-1.10.4.custom.min.js"></script>
     <script src="js/script.js">
     </script>
   </head>
   
   <body>
-    <p id="simple-text" style=" position:absolute; top:100px; left:100px; color:white; font-size:20px; text-shadow: 0 5px 10px rgba(255,255,255,0.5);">
+    <p id="simple-text" style=" position:absolute; top:100px; left:100px; color:white; font-size:20px; text-shadow: 0 5px 10px rgba(255,255,255,0.5);height: calc(100% - 150px); overflow:auto;">
       Changelog
       <br>
       <br>
@@ -41,6 +41,20 @@
         script.js
       </i>
       code
+      <br>
+      <br>
+      - Version: 1.02 -
+      <br>
+      <br>
+      ==added heading and about text
+      <br>
+      ==Rebuild(fixed)
+      <i style="color:lightgreen;">
+        script.js
+      </i>
+      code
+      <br>
+      == 3 simple text displaying <i style="color:palevioletred;">effects</i>
       <br>
       <br>
       <br>
@@ -72,7 +86,8 @@
       </div>
     </div>
     <div id="preview">
-      
+      <h1 id="heading"></h1>
+      <p id="about"></p>
     </div>
     <div id="more">
       <span class="fa-stack fa-lg withinverse" style="position: absolute; top:calc(50% - 21px);">

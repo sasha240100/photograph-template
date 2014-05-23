@@ -5,7 +5,8 @@
 ## Fork me on GitHub
 */
 $(document).ready(function () {
-    var settings_data, sizex, inviz, viz, toggler = true;
+    var sizex, inviz, viz, toggler = true;
+	//settings_data;
 
     //we need to include settings.json file 
     $.ajax({
@@ -97,7 +98,7 @@ $(document).ready(function () {
     //--Initialization of images--
     var imgcount;
     for(imgcount = 0; imgcount < settings_data.images.number; imgcount++) {
-        $('ul#vl_ul').append($('<li class="img_shortcut"><a href="#" onclick="show_preview($(this));"><div class="vu_inner" style="background:url(' + settings_data.images.assets[imgcount] + '); background-size:100%;"></div></a></li>'));
+        $('ul#vl_ul').append($('<li class="img_shortcut" id="' + imgcount +  '"><a href="#" onclick="show_preview($(this).parent(2));"><div class="vu_inner" style="background:url(' + settings_data.images.assets[imgcount] + '); background-size:100%;"></div></a></li>'));
     } //write some more tags to our list/gallery
     checkvisible();
 
@@ -108,12 +109,30 @@ $(document).ready(function () {
     $('#preview').css({
         'background': 'url(' + settings_data.images.assets[settings_data.usersettings.deafultImageNum] + ')',
         'background-size': 'auto 100%'
-    }); //Automatic preview
+    }).find('h1#heading').text(settings_data.images.text[settings_data.usersettings.deafultImageNum].heading); //Automatic preview
+	$('#preview').find('p#about').text(settings_data.images.text[settings_data.usersettings.deafultImageNum].content);
+
+switch (true) {
+  case settings_data.usersettings.textEffects.fading:
+    $('#preview').find('*').css('display', 'none').fadeIn();
+	break;
+  case settings_data.usersettings.textEffects.puffing:
+    $('#preview').find('*').css('display', 'none').toggle('puff');
+	break;
+  case settings_data.usersettings.textEffects.sliding:
+    $('#preview').find('*').css('display', 'none').slideUp();
+	break;
+}
+
+	
     if(settings_data.usersettings.bodyFading == true) { //fade in body when it's loaded
         $('body').css('display', 'none');
         $('body').fadeIn(1500);
     }
     $('#sp-tamp').css('background-image', "url(" + settings_data.usersettings.sptamp + ")");
+	
+	
+	//rewrite for me ( because another way this can't work(( )!!
 });
 
 //--ending-- (not JQuery)
@@ -128,12 +147,22 @@ function show_preview(elem) {
         }, 500);
         $('#more').find('span').find('i').removeClass('fa-angle-right');
         $('#more').find('span').find('i').addClass('fa-angle-left');
-        console.log(atag.html());
-        var atgurl = atag.html().substring(atag.html().indexOf('(') + 1, atag.html().indexOf(')'));
-        var bronebro = +atgurl.substring(11, atgurl.indexOf('.'));
+        var atgurl = atag.attr('id');
         $('#preview').css({
-            'background': "url(" + atgurl + ")",
+            'background': "url(img/assets/" + (+atgurl+1) + ".jpg)",
             "background-size": " auto 100%"
-        });
+        }).find('h1#heading').text(settings_data.images.text[atgurl].heading);
+		$('#preview').find('p#about').text(settings_data.images.text[atgurl].content);
+switch (true) {
+  case settings_data.usersettings.textEffects.fading:
+    $('#preview').find('*').css('display', 'none').fadeIn();
+	break;
+  case settings_data.usersettings.textEffects.puffing:
+    $('#preview').find('*').css('display', 'none').toggle('puff');
+	break;
+  case settings_data.usersettings.textEffects.sliding:
+    $('#preview').find('*').css('display', 'none').slideUp();
+	break;
+}
     });
 }

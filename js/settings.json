@@ -14,6 +14,13 @@
 			{"width": 2048,"height": 1328},
 			{"width": 1061,"height": 700},
 			{"width": 1600,"height": 1010}
+		],
+		"text": [
+			{"heading":"Image 1","content":"simple image text..."},
+			{"heading":"Image 2","content":"simple image text..."},
+			{"heading":"Image 3","content":"simple image text..."},
+			{"heading":"Image 4","content":"simple image text..."},
+			{"heading":"Image 5","content":"simple image text..."}
 		]
 	},
 	
@@ -21,6 +28,11 @@
 		"overflow":"hidden",
 		"deafultImageNum": 0,
 		"bodyFading": true,
-		"sptamp": "img/sp-tampl.png"
+		"sptamp": "img/sp-tampl.png",
+		"textEffects": {
+			"fading":false,
+			"puffing":false,
+			"sliding":false
+		}
 	}
 }

@@ -6,6 +6,9 @@
 */
 
 /* CSSTidy 1.3: Wed, 21 May 2014 07:31:32 -0700 */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Comfortaa:400,700&subset=latin,cyrillic);
+
 #vertical-line {
 background:#696357;
 height:100%;
@@ -84,4 +87,19 @@ padding:0;
 ul#vl_ul {
 margin:0;
 padding:100px 0 0;
+}
+
+h1#heading {
+position: absolute;
+right: 100px;
+color: white;
+font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+p#about {
+position: absolute;
+right: 100px;
+top: 50px;
+color: white;
+font-family: 'Comfortaa', cursive;
 }
