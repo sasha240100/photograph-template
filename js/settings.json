@@ -32,7 +32,10 @@
 		"textEffects": {
 			"fading":false,
 			"puffing":false,
-			"sliding":false
+			"sliding":false,
+			"bounce":false,
+			"shake":false,
+			"pulsate":false
 		}
 	}
 }

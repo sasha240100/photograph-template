@@ -122,6 +122,15 @@ switch (true) {
   case settings_data.usersettings.textEffects.sliding:
     $('#preview').find('*').css('display', 'none').slideUp();
 	break;
+  case settings_data.usersettings.textEffects.shake:
+    $('#preview').find('*').css('display', 'none').effect( "shake" );
+	break;
+  case settings_data.usersettings.textEffects.bounce:
+    $('#preview').find('*').css('display', 'none').toggle( "bounce", { times: 3 }, "slow" );
+	break;
+  case settings_data.usersettings.textEffects.pulsate:
+    $('#preview').find('*').css('display', 'none').toggle( "pulsate" );
+	break;
 }
 
 	
